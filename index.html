@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Artisan Portfolio | 匠心工坊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-background">
+        <canvas id="canvas-bg"></canvas>
+    </div>
+
+    <div class="header-wire">
+        <svg class="wire-svg" viewBox="0 0 400 100">
+            <path d="M0,20 Q200,80 400,20" fill="transparent" stroke="#aaa" stroke-width="1"/>
+        </svg>
+        <nav class="hanging-nav">
+            <div class="tag-item" onclick="showContent('about')">
+                <div class="clip"></div>
+                <div class="tag-paper">ABOUT<div class="tag-stain s-green"></div></div>
+            </div>
+            <div class="tag-item" onclick="showContent('work')">
+                <div class="clip"></div>
+                <div class="tag-paper">WORK<div class="tag-stain s-blue"></div></div>
+            </div>
+            <div class="tag-item" onclick="showContent('skills')">
+                <div class="clip"></div>
+                <div class="tag-paper">SKILLS<div class="tag-stain s-orange"></div></div>
+            </div>
+            <div class="tag-item" onclick="showContent('contact')">
+                <div class="clip"></div>
+                <div class="tag-paper">CONTACT<div class="tag-stain s-purple"></div></div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="main-layout">
+        <section class="intro-zone">
+            <div class="flower-blob">
+                <div class="intro-inner">
+                    <img src="profile.jpg" class="profile-img">
+                    <h1 class="name">ARTISAN</h1>
+                    <p class="desc">設計師與藝術創作者</p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="work-categories" id="work-cats">
+            <div class="cat-btn active" onclick="filterGallery('interior')">
+                <div class="icon-placeholder cube"></div>
+                <span>Interior</span>
+            </div>
+            <div class="cat-btn" onclick="filterGallery('traditional')">
+                <div class="icon-placeholder blot"></div>
+                <span>Art</span>
+            </div>
+            <div class="cat-btn" onclick="filterGallery('interactive')">
+                <div class="icon-placeholder poly"></div>
+                <span>Media</span>
+            </div>
+        </aside>
+
+        <section class="display-zone">
+            <div id="gallery-scroller" class="scroller">
+                </div>
+            <div id="info-panel" class="info-card" style="display:none;">
+                <h2 id="info-title"></h2>
+                <div id="info-body"></div>
+            </div>
+        </section>
+    </main>
+
+    <svg style="display:none;">
+        <filter id="watercolor-filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
+        </filter>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>

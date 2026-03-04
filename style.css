@@ -1,0 +1,85 @@
+:root {
+    --paper-tint: #f5f2eb;
+    --green: rgba(144, 180, 144, 0.45);
+    --blue: rgba(100, 149, 237, 0.35);
+    --orange: rgba(220, 160, 100, 0.45);
+    --purple: rgba(150, 120, 180, 0.45);
+}
+
+* { box-sizing: border-box; }
+body, html { margin: 0; padding: 0; height: 100%; font-family: 'serif'; overflow: hidden; }
+
+/* 背景設定：水彩紙紋理 */
+#app-background {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -2;
+    background-image: url('/picture/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--paper-tint);
+    filter: sepia(10%) contrast(95%);
+}
+
+#canvas-bg {
+    position: absolute; top: 0; left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* 右上角掛件 */
+.header-wire { position: fixed; top: 0; right: 50px; width: 400px; height: 150px; z-index: 100; }
+.wire-svg { width: 100%; }
+.hanging-nav { display: flex; justify-content: space-around; position: absolute; top: 40px; width: 100%; }
+.tag-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: 0.3s; }
+.clip { width: 12px; height: 18px; background: #666; border-radius: 2px; margin-bottom: -4px; z-index: 5; }
+.tag-paper { 
+    background: #fff; padding: 10px 18px; border: 1px solid #ddd; font-size: 11px; 
+    position: relative; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); background-image: url('paper-texture.jpg');
+}
+.tag-stain { position: absolute; top: -4px; left: 0; width: 100%; height: 6px; filter: url(#watercolor-filter); }
+.s-green { background: var(--green); } .s-blue { background: var(--blue); } 
+.s-orange { background: var(--orange); } .s-purple { background: var(--purple); }
+
+/* 主佈局 */
+.main-layout { display: grid; grid-template-columns: 35% 150px 1fr; height: 100vh; align-items: center; padding: 0 40px; }
+
+/* 自我介紹雲朵 */
+.flower-blob {
+    width: 420px; height: 420px; background: var(--green);
+    /*-webkit-mask-image: url('mask-blob.png'); mask-image: url('mask-blob.png');*/
+
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+
+    mask-size: contain; mask-repeat: no-repeat; mask-position: center;
+    display: flex; justify-content: center; align-items: center; text-align: center;
+}
+.profile-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+
+/* 分類按鈕區 */
+.work-categories { display: flex; flex-direction: column; gap: 40px; align-items: center; }
+.cat-btn { opacity: 0.4; cursor: pointer; text-align: center; transition: 0.3s; }
+.cat-btn.active { opacity: 1; transform: scale(1.1); }
+.icon-placeholder { width: 50px; height: 50px; border: 1px dashed #999; margin: 0 auto 5px; } /* 這裡讓你以後畫圖標 */
+
+/* 作品展示區 (圓角正方形 + 底框) */
+.display-zone { width: 100%; height: 75vh; display: flex; align-items: center; }
+.scroller { display: flex; gap: 45px; overflow-x: auto; padding: 20px 0; height: 100%; align-items: center; scrollbar-width: none; }
+.scroller::-webkit-scrollbar { display: none; }
+
+.work-card { width: 340px; flex-shrink: 0; display: flex; flex-direction: column; gap: 15px; }
+.media-box { 
+    width: 340px; height: 340px; background: rgba(255,255,255,0.5); 
+    border-radius: 35px; overflow: hidden; display: flex; justify-content: center; align-items: center;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.02);
+}
+.media-box img, .media-box video { max-width: 90%; max-height: 90%; object-fit: contain; }
+
+.card-info { 
+    background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(8px); 
+    padding: 15px; border-radius: 18px; text-align: center; font-size: 14px; color: #555;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* 文字資訊面板 */
+.info-card { width: 85%; padding: 60px; line-height: 2; color: #444; animation: fadeIn 0.6s; }
+@keyframes fadeIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
