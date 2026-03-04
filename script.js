@@ -75,7 +75,8 @@ function showContent(mode) {
         scroller.style.display = 'flex';
         panel.style.display = 'none';
         cats.style.visibility = 'visible';
-        filterGallery('interior');
+        const firstBtn = document.querySelector('.cat-btn');
+        filterGallery('interior', firstBtn);
     } else {
         scroller.style.display = 'none';
         cats.style.visibility = 'hidden';
@@ -85,12 +86,16 @@ function showContent(mode) {
     }
 }
 
-function filterGallery(cat) {
+function filterGallery(cat, el) {
     const container = document.getElementById('gallery-scroller');
     container.innerHTML = '';
     
-    document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
-    event.currentTarget.classList.add('active');
+    document.querySelectorAll('.cat-btn')
+        .forEach(btn => btn.classList.remove('active'));
+
+    if (el) {
+        el.classList.add('active');
+    }
 
     works[cat].forEach(item => {
         const card = document.createElement('div');
@@ -99,7 +104,10 @@ function filterGallery(cat) {
             ? `<video controls><source src="${item.src}" type="video/mp4"></video>`
             : `<img src="${item.src}">`;
         
-        card.innerHTML = `<div class="media-box">${media}</div><div class="card-info">${item.title}</div>`;
+        card.innerHTML = `
+            <div class="media-box">${media}</div>
+            <div class="card-info">${item.title}</div>
+        `;
         container.appendChild(card);
     });
 }
