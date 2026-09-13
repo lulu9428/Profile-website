@@ -1,82 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <title>Artisan Portfolio | 匠心工坊</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="LULU 的作品集原型：從室內設計走向互動設計，探索空間、視覺、數位媒體與互動體驗。">
+<title>LULU — From Space to Experience</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232a302e'/%3E%3Cpath d='M9 7v18h15v-4H13V7' fill='%23f2f1ed'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer>
+</script>
 </head>
 <body>
-    <div id="app-background">
-        <canvas id="canvas-bg"></canvas>
-    </div>
-
-    <div class="header-wire">
-        <svg class="wire-svg" viewBox="0 0 400 100">
-            <path d="M0,20 Q200,80 400,20" fill="transparent" stroke="#aaa" stroke-width="1"/>
-        </svg>
-        <nav class="hanging-nav">
-            <div class="tag-item" onclick="showContent('about')">
-                <div class="clip"></div>
-                <div class="tag-paper">ABOUT<div class="tag-stain s-green"></div></div>
-            </div>
-            <div class="tag-item" onclick="showContent('work')">
-                <div class="clip"></div>
-                <div class="tag-paper">WORK<div class="tag-stain s-blue"></div></div>
-            </div>
-            <div class="tag-item" onclick="showContent('skills')">
-                <div class="clip"></div>
-                <div class="tag-paper">SKILLS<div class="tag-stain s-orange"></div></div>
-            </div>
-            <div class="tag-item" onclick="showContent('contact')">
-                <div class="clip"></div>
-                <div class="tag-paper">CONTACT<div class="tag-stain s-purple"></div></div>
-            </div>
-        </nav>
-    </div>
-
-    <main class="main-layout">
-        <section class="intro-zone">
-            <div class="flower-blob">
-                <div class="intro-inner">
-                    <img src="profile.jpg" class="profile-img">
-                    <h1 class="name">ARTISAN</h1>
-                    <p class="desc">設計師與藝術創作者</p>
-                </div>
-            </div>
-        </section>
-
-        <aside class="work-categories" id="work-cats">
-            <div class="cat-btn active" onclick="filterGallery('interior', this)">
-                <div class="icon-placeholder cube"></div>
-                <span>Interior</span>
-            </div>
-            <div class="cat-btn" onclick="filterGallery('traditional', this)">
-                <div class="icon-placeholder blot"></div>
-                <span>Art</span>
-            </div>
-            <div class="cat-btn" onclick="filterGallery('interactive', this)">
-                <div class="icon-placeholder poly"></div>
-                <span>Media</span>
-            </div>
-        </aside>
-
-        <section class="display-zone">
-            <div id="gallery-scroller" class="scroller">
-                </div>
-            <div id="info-panel" class="info-card" style="display:none;">
-                <h2 id="info-title"></h2>
-                <div id="info-body"></div>
-            </div>
-        </section>
-    </main>
-
-    <svg style="display:none;">
-        <filter id="watercolor-filter">
-            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise"/>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
-        </filter>
-    </svg>
-
-    <script src="script.js"></script>
+<div class="reading-progress" aria-hidden="true">
+</div>
+<a class="skip" href="#main">跳到主要內容</a>
+<header>
+<a class="brand" href="#/" aria-label="LULU 回首頁">LULU<span>PORTFOLIO / PROTOTYPE</span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation">選單 <span>＋</span>
+</button>
+<nav id="navigation" aria-label="主選單">
+<a href="#/works">Works <small>作品</small>
+</a>
+<a href="#/journey">Journey <small>經歷</small>
+</a>
+<a href="#/about">About <small>關於</small>
+</a>
+<a href="#/about?section=contact">Contact <span>↗</span>
+</a>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+</main>
+<footer>
+<button class="motion-toggle" aria-pressed="false">減少動態</button>
+<a class="brand" href="#/">LULU</a>
+<p>From space to experience.</p>
+<span>作品集原型 · 內容待補</span>
+<a href="#/about?section=contact">聯絡資訊 ↗</a>
+<button class="top-button">回到頂端 ↑</button>
+</footer>
+<div id="cursor" aria-hidden="true">查看</div>
+<dialog id="lightbox" aria-label="作品圖片瀏覽">
+<div class="lightbox-bar">
+<span id="gallery-counter">
+</span>
+<button id="gallery-close" aria-label="關閉圖片">關閉 ✕</button>
+</div>
+<div id="gallery-view">
+</div>
+<div class="lightbox-bar">
+<button id="gallery-prev" aria-label="上一張圖片">← 上一張</button>
+<p id="gallery-caption">
+</p>
+<button id="gallery-next" aria-label="下一張圖片">下一張 →</button>
+</div>
+</dialog>
 </body>
 </html>
