@@ -1,0 +1,117 @@
+[
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\1.png",
+    "copy": "originals/1.png",
+    "web": "cover.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用1.png",
+    "copy": "originals/企劃書用1.png",
+    "web": "render-1.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用2.png",
+    "copy": "originals/企劃書用2.png",
+    "web": "render-2.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用3.png",
+    "copy": "originals/企劃書用3.png",
+    "web": "render-3.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用4.png",
+    "copy": "originals/企劃書用4.png",
+    "web": "render-4.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用5.png",
+    "copy": "originals/企劃書用5.png",
+    "web": "render-5.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用6.png",
+    "copy": "originals/企劃書用6.png",
+    "web": "render-6.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\渲染圖\\企劃書用7.png",
+    "copy": "originals/企劃書用7.png",
+    "web": "render-7.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\B1一樓平面圖.png",
+    "copy": "originals/B1一樓平面圖.png",
+    "web": "plans-lower.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\二三樓平面圖.png",
+    "copy": "originals/二三樓平面圖.png",
+    "web": "plans-upper.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\概念轉換1.png",
+    "copy": "originals/概念轉換1.png",
+    "web": "concept-bamboo.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\概念轉換2.png",
+    "copy": "originals/概念轉換2.png",
+    "web": "concept-tulou.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\概念轉換3.png",
+    "copy": "originals/概念轉換3.png",
+    "web": "concept-flower.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型展出.jpg",
+    "copy": "originals/模型展出.jpg",
+    "web": "model.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\基地分析.png",
+    "copy": "originals/基地分析.png",
+    "web": "site.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\草模1.jpg",
+    "copy": "originals/草模1.jpg",
+    "web": "study-model.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\展出.jpg",
+    "copy": "originals/展出.jpg",
+    "web": "exhibition.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\模型1.jpg",
+    "copy": "originals/模型1.jpg",
+    "web": "model-1.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\模型2.jpg",
+    "copy": "originals/模型2.jpg",
+    "web": "model-2.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\模型3.jpg",
+    "copy": "originals/模型3.jpg",
+    "web": "model-3.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\模型5.jpg",
+    "copy": "originals/模型5.jpg",
+    "web": "model-5.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\模型6.jpg",
+    "copy": "originals/模型6.jpg",
+    "web": "model-6.webp"
+  },
+  {
+    "source": "E:\\高三\\專題製作\\圖片\\模型圖片\\模型7.jpg",
+    "copy": "originals/模型7.jpg",
+    "web": "model-7.webp"
+  }
+]

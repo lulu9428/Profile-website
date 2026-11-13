@@ -1,0 +1,2 @@
+# Local source backups; website uses the optimized files outside originals.
+/assets/**/originals/

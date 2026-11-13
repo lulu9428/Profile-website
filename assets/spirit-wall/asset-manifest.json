@@ -1,0 +1,85 @@
+[
+  {
+    "source": "E:\\大一\\互動牆\\1.png",
+    "original": "forest.png",
+    "web": "forest.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\2.jpeg",
+    "original": "altar.jpeg",
+    "web": "altar.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\互動牆三折頁\\3.png",
+    "original": "festival.png",
+    "web": "festival.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\互動牆三折頁\\1.png",
+    "original": "brochure.png",
+    "web": "brochure.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\互動牆影片素材\\IMG_7589.JPG",
+    "original": "exhibition-a.JPG",
+    "web": "exhibition-a.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\互動牆影片素材\\IMG_7586.JPG",
+    "original": "exhibition-c.JPG",
+    "web": "exhibition-c.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\互動牆影片素材\\end.JPG",
+    "original": "print-display.JPG",
+    "web": "print-display.webp"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\互動牆影片素材\\互動牆紀錄影片.mp4",
+    "original": "exhibition.mp4",
+    "web": "exhibition.mp4",
+    "trim": {
+      "start_seconds": 0,
+      "end_seconds": 74,
+      "original_preserved": true
+    }
+  },
+  {
+    "source": "E:\\大一\\互動牆\\prototype.mp4",
+    "original": "prototype.mp4",
+    "web": "prototype.mp4"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\場景A demo2.mp4",
+    "original": "scene-a.mp4",
+    "web": "scene-a.mp4"
+  },
+  {
+    "source": "E:\\大一\\互動牆\\ending.mp4",
+    "original": "ending.mp4",
+    "web": "ending.mp4"
+  },
+  {
+    "source": "D:/unity-new_version-main/unity-new_version-main/Assets/Scene",
+    "web": "forest-active.webp",
+    "method": "Rendered in Unity 2022.3.58f1 from an unchanged-source project copy with effect visibility enabled for illustration; not a continuous final-exhibition recording.",
+    "capture": "1.png"
+  },
+  {
+    "source": "D:/unity-new_version-main/unity-new_version-main/Assets/Scene",
+    "web": "altar-active.webp",
+    "method": "Rendered in Unity 2022.3.58f1 from an unchanged-source project copy with effect visibility enabled for illustration; not a continuous final-exhibition recording.",
+    "capture": "second.png"
+  },
+  {
+    "source": "D:/unity-new_version-main/unity-new_version-main/Assets/Scene",
+    "web": "festival-active.webp",
+    "method": "Rendered in Unity 2022.3.58f1 from an unchanged-source project copy with effect visibility enabled for illustration; not a continuous final-exhibition recording.",
+    "capture": "threee-1.png"
+  },
+  {
+    "source": "E:/大一/互動牆/ending.mp4",
+    "web": "ending-poster.jpg",
+    "time_seconds": 7.1
+  }
+]

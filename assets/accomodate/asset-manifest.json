@@ -1,0 +1,77 @@
+[
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\客廳2(加亮).png",
+    "copy": "originals/客廳2(加亮).png",
+    "web": "living-02.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\客廳3(加亮).png",
+    "copy": "originals/客廳3(加亮).png",
+    "web": "living-03.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\主臥1.png",
+    "copy": "originals/主臥1.png",
+    "web": "master.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\次臥2.png",
+    "copy": "originals/次臥2.png",
+    "web": "bedroom.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\單人間3.png",
+    "copy": "originals/單人間3.png",
+    "web": "single.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\陽台1.png",
+    "copy": "originals/陽台1.png",
+    "web": "balcony.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\渲染圖\\廚房2.png",
+    "copy": "originals/廚房2.png",
+    "web": "kitchen.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\大理石.jpg",
+    "copy": "originals/大理石.jpg",
+    "web": "marble.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\布.jpg",
+    "copy": "originals/布.jpg",
+    "web": "fabric.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\地板材質.jpg",
+    "copy": "originals/地板材質.jpg",
+    "web": "floor.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\陽台材質.jpg",
+    "copy": "originals/陽台材質.jpg",
+    "web": "balcony-material.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\牆壁材質.jpg",
+    "copy": "originals/牆壁材質.jpg",
+    "web": "wall.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\平配圖.pdf",
+    "copy": "originals/平配圖.pdf",
+    "web": "plan.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\排版素材\\現況圖.pdf",
+    "copy": "originals/現況圖.pdf",
+    "web": "existing.webp"
+  },
+  {
+    "source": "E:\\高二\\室內製圖\\CAD\\01725.jpg",
+    "copy": "originals/01725.jpg",
+    "web": "reference-plan.webp"
+  }
+]
